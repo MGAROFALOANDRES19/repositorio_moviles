@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Mon Jan 28 00:33:21 ECT 2019
+1.base=/home/marco77713/AndroidStudioProjects/EspolAccess/app/build/intermediates/transforms/dexMerger/debug/0
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=classes2.dex
+0.set=DEX
+0.base=/home/marco77713/AndroidStudioProjects/EspolAccess/app/build/intermediates/transforms/dexMerger/debug/0
+1.path=classes.dex
