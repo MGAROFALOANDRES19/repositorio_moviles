@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.fragments.MapsActivity" android:layout_width="match_parent"
+    android:theme="@style/SplashTheme"
+    android:background="@color/editTextColorBlue">
+
+    <include layout="@layout/actionbar_toolbar"/>
+
+    <ImageView
+        android:id="@+id/information"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/logoacfgame"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+    android:id="@+id/edificios_evaluados"
+    android:layout_width="110dp"
+    android:layout_height="50dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+    android:background="@drawable/edificios_evaluados1"
+    android:adjustViewBounds="true"/>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bottombar_height"
+            tools:context=".views.fragments.MapsActivity" />
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/bottombar_height"
+        android:layout_marginTop="@dimen/bottombar_height"
+        android:background="@android:color/white">
+    </FrameLayout>
+
+
+    <include layout="@layout/bottom_bar"/>
+</RelativeLayout>

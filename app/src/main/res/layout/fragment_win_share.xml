@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.WinShareFragment"
+    android:background="@drawable/win_background">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/txtClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textColor="@android:color/white"
+        android:text="@string/close"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/close_button"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="390dp"
+        android:background="@drawable/getabuild"
+        android:layout_gravity="center"
+        />
+
+
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <include layout="@layout/actionbar_toolbar"></include>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="@drawable/building_background">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/fiec_png"
+                android:layout_alignParentBottom="true"
+                />
+            <TextView
+                android:id="@+id/resultado_accesibilidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextColorBlue"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:paddingLeft="15dp"
+                android:gravity="bottom|center"
+                android:layout_alignBottom="@+id/logo"
+                android:paddingTop="@dimen/padding_drawable"
+                android:paddingBottom="@dimen/padding_drawable"
+                />
+        </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:fillViewport="true">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/accesibility_building"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"></android.support.v7.widget.RecyclerView>
+
+    </ScrollView>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

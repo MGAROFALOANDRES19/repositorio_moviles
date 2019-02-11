@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.CreateAccountActivity"
+    android:background="@color/colorPrimary">
+
+    <include layout="@layout/actionbar_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/hint_username"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/titlesLogin" />
+            <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:drawableLeft="@drawable/vector_03"
+                    android:drawablePadding="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/hint_password"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/titlesLogin" />
+            <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña (mínimo 6 caracteres)"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/vectores_18"
+                    android:drawablePadding="10dp"/>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/login_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="¿Ya tienes cuenta? Iniciar sesión"
+                android:textSize="16dip"
+                android:background="@drawable/text_lines2"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_join"
+                android:background="@drawable/btn_rounded"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

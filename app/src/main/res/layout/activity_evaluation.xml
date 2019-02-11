@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.EvaluationActivity"
+    android:background="@drawable/background_for_evaluation"
+    >
+
+    <ImageView
+        android:id="@+id/building"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fiec_png"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"/>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<LinearLayout
+    android:id="@+id/buttons_evaluation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:layout_gravity="bottom">
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:tag="Cancelar"
+        android:layout_gravity="bottom"
+        android:onClick="prevAction"
+        android:text="Cancelar"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_rounded"
+        android:layout_weight=".5"
+        android:layout_marginRight="5dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:tag="Iniciar"
+        android:onClick="nextAction"
+        android:text="Siguiente"
+        android:background="@drawable/btn_rounded"
+        android:textColor="@android:color/white"
+        android:layout_weight=".5"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
