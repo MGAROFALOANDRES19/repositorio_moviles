@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff9d9</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#ed553b</color>
+    <color name="colorAccentLow">#F4511E</color>
+    <color name="editTextColorBlue">#112f41</color>
+    <color name="backgroundText_card">#53292929</color>
+    <color name="tab_enable">#ffffff</color>
+    <color name="tab_disable">#ffffff</color>
+    <color name="btnTextColor">#fff8db</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#008585</color>
+    <color name="background_orange">#ffd68e</color>
+    <color name="backgroundWhite">#fffbf1</color>
+</resources>
